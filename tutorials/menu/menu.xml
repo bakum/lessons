@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+       id="menu_tutorials_root"
+       name="Tutorials"
+       sequence="1"/>
+    <menuitem
+       id="menu_tutorials_dictionary"
+       parent="menu_tutorials_root"
+       name="Dictionary"
+       sequence="1"/>
+    <menuitem
+       id="menu_tutorials_docs"
+       parent="menu_tutorials_root"
+       name="Docs"
+       sequence="2"/>
+
+    <menuitem
+       id="menu_tutorials_devices"
+       name="Devices"
+       parent="menu_tutorials_dictionary"
+       action="tutorials.action_tutorials_devices"
+       sequence="1"/>
+    <menuitem
+       id="menu_tutorials_plan"
+       name="Inspection Plan"
+       parent="menu_tutorials_docs"
+       action="tutorials.action_tutorials_plan"
+       sequence="1"/>
+</odoo>

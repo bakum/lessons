@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_tutorials_devices" model="ir.actions.act_window">
+        <field name="name">Devices</field>
+        <field name="res_model">optimus.kpi.devices</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_tutorials_plan" model="ir.actions.act_window">
+        <field name="name">Inspection Plan</field>
+        <field name="res_model">optimus.kpi.plan</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

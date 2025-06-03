@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record id="view_tutorials_plan_tree" model="ir.ui.view">
+        <field name="name">optimus.kpi.plan.tree</field>
+        <field name="model">optimus.kpi.plan</field>
+        <field name="arch" type="xml">
+            <tree default_order="date_plan asc">
+                <field name="name"/>
+                <field name="date_plan"/>
+                <field name="state" widget="badge" decoration-success="state == 'done'"
+                       decoration-warning="state == 'draft'"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_tutorials_plan_form" model="ir.ui.view">
+        <field name="name">optimus.kpi.plan.form</field>
+        <field name="model">optimus.kpi.plan</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="id" invisible="1"/>
+                     <field name="state" widget="statusbar" statusbar_visible="draft,done,cancel"/>
+                    <button name="action_draft" class="btn-primary" string="Draft" type="object"
+                            invisible="state not in ['cancel']"/>
+                    <button name="action_done" class="btn-primary" string="Confirm" type="object"
+                           invisible="state not in ['draft'] or not id"/>
+                    <button name="action_cancel" class="btn-primary" string="Cancel" type="object"
+                            invisible="state not in ['done']"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" force_save="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group id="header_left_group">
+                            <field name="date_plan" readonly="state in ['done','cancel']"/>
+                        </group>
+                        <group id="header_right_group">
+                            <field name="user_id" readonly="1" options="{'no_open': True, 'no_create': True}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page id="plan_tab" name="plan_tab" string="Plan">
+                            <field name="plan_line" widget="section_and_note_one2many" mode="tree">
+                                <tree editable="bottom" string="Journal Items" default_order="id">
+                                    <control>
+                                        <create name="add_line_control" string="Add a line"/>
+                                    </control>
+                                    <field name="inventory_number"/>
+                                    <field name="device_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                 </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

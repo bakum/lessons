@@ -1,0 +1,97 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tutorials
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-15 08:55+0000\n"
+"PO-Revision-Date: 2025-04-15 08:55+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tutorials
+#: model:ir.model.fields.selection,name:tutorials.selection__optimus_kpi_devices__accuracy_class__0_5
+msgid "0.5"
+msgstr ""
+
+#. module: tutorials
+#: model:ir.model.fields.selection,name:tutorials.selection__optimus_kpi_devices__accuracy_class__1_0
+msgid "1.0"
+msgstr ""
+
+#. module: tutorials
+#: model:ir.model.fields,field_description:tutorials.field_optimus_kpi_devices__accuracy_class
+msgid "Accuracy class"
+msgstr "Клас точності"
+
+#. module: tutorials
+#: model:ir.model.fields,field_description:tutorials.field_optimus_kpi_devices__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: tutorials
+#: model:ir.model.fields,field_description:tutorials.field_optimus_kpi_devices__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: tutorials
+#: model_terms:ir.ui.view,arch_db:tutorials.view_tutorials_devices_form
+msgid "Description"
+msgstr "Примітка"
+
+#. module: tutorials
+#: model:ir.model.fields,field_description:tutorials.field_optimus_kpi_devices__desc
+msgid "Device Description"
+msgstr "Примітка пристрою"
+
+#. module: tutorials
+#: model:ir.model.fields,field_description:tutorials.field_optimus_kpi_devices__name
+msgid "Device Name"
+msgstr "Найменування"
+
+#. module: tutorials
+#: model:ir.actions.act_window,name:tutorials.action_tutorials_devices
+#: model:ir.ui.menu,name:tutorials.menu_tutorials_devices
+msgid "Devices"
+msgstr "Прилад"
+
+#. module: tutorials
+#: model:ir.model.fields,field_description:tutorials.field_optimus_kpi_devices__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: tutorials
+#: model:ir.model.fields,field_description:tutorials.field_optimus_kpi_devices__id
+msgid "ID"
+msgstr ""
+
+#. module: tutorials
+#: model:ir.model.fields,field_description:tutorials.field_optimus_kpi_devices__inventory_number
+msgid "Inventory Number"
+msgstr "Інв. номер"
+
+#. module: tutorials
+#: model:ir.model,name:tutorials.model_optimus_kpi_devices
+msgid "Kpi Devices"
+msgstr ""
+
+#. module: tutorials
+#: model:ir.model.fields,field_description:tutorials.field_optimus_kpi_devices__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: tutorials
+#: model:ir.model.fields,field_description:tutorials.field_optimus_kpi_devices__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: tutorials
+#: model:ir.ui.menu,name:tutorials.menu_tutorials_root
+msgid "Tutorials"
+msgstr ""
