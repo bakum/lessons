@@ -39,7 +39,7 @@
                             <field name="date_plan" readonly="state in ['done','cancel']"/>
                         </group>
                         <group id="header_right_group">
-                            <field name="user_id" readonly="1" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="user_id" readonly="1" options="{'no_open': True, 'no_create': True}" groups="tutorials.group_tutorials_admin,tutorials.group_tutorials_user"/>
                         </group>
                     </group>
                     <notebook>

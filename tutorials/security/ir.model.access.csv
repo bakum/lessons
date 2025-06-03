@@ -1,5 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-tutorials.access_optimus_kpi_devices,access_optimus_kpi_devices,tutorials.model_optimus_kpi_devices,base.group_user,1,1,1,1
+tutorials.access_optimus_kpi_devices,access_optimus_kpi_devices,tutorials.model_optimus_kpi_devices,tutorials.group_tutorials_admin,1,1,1,1
+tutorials.access_optimus_kpi_devices_user,access_optimus_kpi_devices_user,tutorials.model_optimus_kpi_devices,tutorials.group_tutorials_user,1,1,1,0
 
-tutorials.access_optimus_kpi_plan,access_optimus_kpi_plan,tutorials.model_optimus_kpi_plan,base.group_user,1,1,1,1
-tutorials.access_optimus_kpi_plan_line,access_optimus_kpi_plan_line,tutorials.model_optimus_kpi_plan_line,base.group_user,1,1,1,1
+tutorials.access_optimus_kpi_plan,access_optimus_kpi_plan,tutorials.model_optimus_kpi_plan,tutorials.group_tutorials_admin,1,1,1,1
+tutorials.access_optimus_kpi_plan_user,access_optimus_kpi_plan_user,tutorials.model_optimus_kpi_plan,tutorials.group_tutorials_user,1,1,1,0
+
+tutorials.access_optimus_kpi_plan_line,access_optimus_kpi_plan_line,tutorials.model_optimus_kpi_plan_line,tutorials.group_tutorials_admin,1,1,1,1
+tutorials.access_optimus_kpi_plan_line_user,access_optimus_kpi_plan_line_user,tutorials.model_optimus_kpi_plan_line,tutorials.group_tutorials_user,1,1,1,0

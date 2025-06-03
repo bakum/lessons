@@ -9,6 +9,7 @@
     'installable': True,
     'application': True,
     'data': [
+        'security/my_security.xml',
         'security/ir.model.access.csv',
         'menu/actions.xml',
         'menu/menu.xml',
