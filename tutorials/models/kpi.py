@@ -17,6 +17,10 @@ class KpiDevices(models.Model):
     inventory_number = fields.Char('Inventory Number')
     desc = fields.Char('Device Description')
 
+    def action_generate_description(self):
+        for record in self:
+            record.desc = f"Device {record.name} with accuracy class {record.accuracy_class} >> {record.desc}."
+
     @api.model_create_multi
     def create(self, vals_list):
         for vals in vals_list:
